@@ -1,5 +1,8 @@
 # Building Customized OpenWRT Image for GL.iNet GL-AR750
 
+[![Generic badge](https://img.shields.io/badge/builds-yes-brightgreen.svg)](https://shields.io/)
+[![BADGINATOR](https://img.shields.io/badge/badges-2-brightgreen.svg?style=flat)](https://github.com/LindezaGrey/zieglede)
+
 First install buildtools
 
 ```

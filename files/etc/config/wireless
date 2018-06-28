@@ -13,7 +13,7 @@ config wifi-iface 'default_radio0'
 	option network 'lan'
 	option mode 'ap'
 	option encryption 'none'
-	option ssid 'test'
+	option ssid 'MiniRouter5G'
 
 config wifi-device 'radio1'
 	option type 'mac80211'
@@ -35,12 +35,12 @@ config wifi-iface 'default_radio1'
 	option auth_secret 'testing123'
 	option acct_server '192.168.8.1'
 	option acct_port '1813'
-	option ssid 'EAP'
+	option ssid 'MiniRouterEAP'
 
 config wifi-iface
 	option device 'radio1'
 	option mode 'ap'
-	option ssid 'OpenWrt'
+	option ssid 'MiniRouterGUEST'
 	option encryption 'none'
 	option network 'guest'
 
