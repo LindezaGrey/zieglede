@@ -7,12 +7,12 @@ config global
         option check_fs '0'
 
 config mount
-        option uuid '11c16739-0987-4294-bb2d-d46fcde322fb'
+        option device '/dev/sda1'
         option target '/mnt/share'
         option enabled '1'
 
 config mount
-        option uuid '9d2cc512-0de9-4ce9-9e5e-560c0d21337d'
+        option device '/dev/sdb'
         option target '/mnt/backupdrive'
         option enabled '1'
 
