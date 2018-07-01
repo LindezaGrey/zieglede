@@ -218,4 +218,4 @@ DEFAULT	Hint == "SLIP"
 # You should add test accounts to the TOP of this file! #
 # See the example user "bob" above.                     #
 #########################################################
-gast	Cleartext-Password := "gesperrt"
+guest	Cleartext-Password := "secret"

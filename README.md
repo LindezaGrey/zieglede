@@ -8,7 +8,7 @@
 
 This is a fork from the vanilla [OpenWRT](https://github.com/openwrt/openwrt) firmware. This firmware is a replacement for the stock firmware. It is already preconfigured so it can be used out of the box. You should use this firmware if you want to have an up-to-date OpenWRT installation and don't want the preinstalled and modded firmware of the manufacturer or just don't trust the stock firmware. This firmware comes with the following features enabled:
 
-* working Freeradius3 server (default user: xxx, xxx) with WPA2-EAP protected wifi (enterprise)
+* working Freeradius3 server (default user: guest, password: secret) with WPA2-EAP protected wifi (enterprise)
 * Samba Server
 * Block mount (automatic mount of USB drives)
 * OpenVPN
@@ -21,6 +21,7 @@ This is a fork from the vanilla [OpenWRT](https://github.com/openwrt/openwrt) fi
 * Bandwitdh monitor
 * Wifi schedule
 * OpenSSH server
+* Other useful tools: nano, wget, rsync
 
 ## Flashing the image via LuCi
 

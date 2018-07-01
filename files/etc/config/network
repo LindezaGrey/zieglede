@@ -41,3 +41,6 @@ config interface 'guest'
 	option ipaddr '192.168.88.1'
 	option netmask '255.255.255.0'
 
+config interface 'VPN_Client'
+        option proto 'none'
+        option ifname 'tun0'
