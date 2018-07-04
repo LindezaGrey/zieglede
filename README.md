@@ -28,7 +28,6 @@ This is a fork from the vanilla [OpenWRT](https://github.com/openwrt/openwrt) fi
 On your stock firmware you can navigate to the LuCi interface and simply flash this [firmware](https://github.com/LindezaGrey/zieglede/blob/master/openwrt-ar71xx-generic-gl-ar750-squashfs-sysupgrade.bin). Make sure you disable the "Keep settings" checkbox.
 
 ## Building the image by yourself
-
 First install buildtools on your preferred linux machine
 
 ```
