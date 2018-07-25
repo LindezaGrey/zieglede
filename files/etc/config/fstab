@@ -6,13 +6,3 @@ config global
         option delay_root '5'
         option check_fs '0'
 
-config mount
-        option device '/dev/sda1'
-        option target '/mnt/share'
-        option enabled '1'
-
-config mount
-        option device '/dev/sdb'
-        option target '/mnt/backupdrive'
-        option enabled '1'
-

@@ -3,21 +3,3 @@ config samba
         option workgroup 'WORKGROUP'
         option description 'Lede'
         option homes '1'
-
-config sambashare
-        option browseable 'yes'
-        option read_only 'no'
-        option guest_ok 'yes'
-        option path '/mnt/share'
-        option create_mask '0777'
-        option dir_mask '0777'
-        option name 'Media'
-
-config sambashare
-        option browseable 'yes'
-        option name 'VPS Backup'
-        option path '/mnt/backupdrive '
-        option read_only 'no'
-        option guest_ok 'yes'
-        option create_mask '0777'
-        option dir_mask '0777'
