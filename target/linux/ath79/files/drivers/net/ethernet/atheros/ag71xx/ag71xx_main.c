@@ -423,13 +423,6 @@ static void ag71xx_hw_init(struct ag71xx *ag)
 {
 	ag71xx_hw_stop(ag);
 
-	if (ag->phy_reset) {
-		reset_control_assert(ag->phy_reset);
-		msleep(50);
-		reset_control_deassert(ag->phy_reset);
-		msleep(200);
-	}
-
 	ag71xx_sb(ag, AG71XX_REG_MAC_CFG1, MAC_CFG1_SR);
 	udelay(20);
 
@@ -559,8 +552,8 @@ static void ath79_mii_ctrl_set_speed(struct ag71xx *ag)
 	}
 
 	t = __raw_readl(ag->mii_base);
-	t &= ~(AR71XX_MII_CTRL_IF_MASK);
-	t |= (mii_speed & AR71XX_MII_CTRL_IF_MASK);
+	t &= ~(AR71XX_MII_CTRL_SPEED_MASK << AR71XX_MII_CTRL_SPEED_SHIFT);
+	t |= mii_speed << AR71XX_MII_CTRL_SPEED_SHIFT;
 	__raw_writel(t, ag->mii_base);
 }
 
@@ -1312,8 +1305,6 @@ static int ag71xx_probe(struct platform_device *pdev)
 		err = PTR_ERR(ag->mac_reset);
 		goto err_free;
 	}
-
-	ag->phy_reset = devm_reset_control_get_optional(&pdev->dev, "phy");
 
 	if (of_property_read_u32_array(np, "fifo-data", ag->fifodata, 3)) {
 		if (of_device_is_compatible(np, "qca,ar9130-eth") ||
