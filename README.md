@@ -31,7 +31,7 @@ On your stock firmware you can navigate to the LuCi interface and simply flash t
 First install buildtools on your preferred linux machine
 
 ```
-sudo apt-get install gcc binutils bzip2 flex python perl make grep unzip gawk subversion libz-dev
+sudo apt-get install gcc binutils bzip2 flex python perl make grep unzip gawk subversion libz-dev build-essential libncurses5-dev libncursesw5-dev
 ```
 
 Run
